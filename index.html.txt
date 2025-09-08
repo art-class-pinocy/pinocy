@@ -235,7 +235,7 @@ export default function ArtClassPinocy() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Button asChild size="lg" className="rounded-2xl">
-                  <a href="https://lin.ee/EY3yPyF" target="_blank" rel="noopener noreferrer" aria-label="LINEで予約">LINEで予約</a>
+                  <a href="https://lin.ee/ikPeDRw" target="_blank" rel="noopener noreferrer" aria-label="LINEで予約">LINEで予約</a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="rounded-2xl">
                   <a href="https://docs.google.com/forms/d/11oXh90VbK_Le9vgHYLzMpsqiHk8AlH6NtPxOAqGC2Hg/edit#responses" target="_blank" rel="noopener noreferrer" aria-label="フォームで申し込み">フォームで申し込み</a>
@@ -292,5 +292,6 @@ zip_path = "/mnt/data/ArtClassPinocy_component_from_user.zip"
 with ZipFile(zip_path, "w", ZIP_DEFLATED) as z:
     z.writestr("react/ArtClassPinocy.jsx", user_code)
     z.writestr("README.txt", "このZIPには、あなたが送ってくれたReactコンポーネントが react/ArtClassPinocy.jsx として入っています。\nGitHubには保管用にアップロードし、公開は index.html を使ってください。")
+
 
 zip_path
