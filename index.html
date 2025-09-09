@@ -24,7 +24,6 @@
       </nav>
     </div>
   </header>
-  <header> ... </header>
 
 <!-- Slideshow Section -->
 <section class="relative w-full overflow-hidden bg-black">
@@ -177,5 +176,28 @@
       </div>
     </div>
   </footer>
+  <script>
+  const slides = document.querySelectorAll('.slide');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('opacity-100');
+      slide.classList.add('opacity-0');
+      if (i === index) {
+        slide.classList.remove('opacity-0');
+        slide.classList.add('opacity-100');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  setInterval(nextSlide, 3000); // 3秒ごとに切り替え
+</script>
+
 </body>
 </html>
